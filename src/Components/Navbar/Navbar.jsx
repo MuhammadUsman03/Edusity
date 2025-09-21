@@ -1,0 +1,40 @@
+import React, { useEffect, useState } from 'react'
+import { Link } from 'react-scroll'
+import './Navbar.css'
+import logo from '../../assets/logo.png'
+import menu_icon from '../../assets/menu-icon.png'
+import { useNavigate } from 'react-router-dom'
+const Navbar = () => {
+  const [sticky, useSticky] = useState(false);
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      window.scrollY > 50 ? useSticky(true) : useSticky(false);
+    })
+  }, [])
+  const [mobileMenu, setMobileMenu] = useState(false);
+  const toggleMenu = () => {
+    mobileMenu ? setMobileMenu(false) : setMobileMenu(true)
+  }
+  const navigation = useNavigate();
+  const NavigateToSignup = () => {
+    navigation('signup');
+  }
+  return (
+    <nav className={`container ${sticky ? "dark-nav" : ''}`}>
+      <img src={logo} alt="logo" className='logo' />
+      <ul className={mobileMenu ? '' : 'hide-mobile-menu'}>
+        <li><Link to="hero" smooth={true} offset={0} duration={500}>Home</Link></li>
+        <li><Link to="programs" smooth={true} offset={-260} duration={500}>Program</Link></li>
+        <li><Link to="about" smooth={true} offset={-150} duration={500}>About us</Link></li>
+        <li><Link to="campus" smooth={true} offset={-260} duration={500}>Campus</Link></li>
+        <li><Link to="testimonials" smooth={true} offset={-260} duration={500}>Testimonials</Link></li>
+        <li><Link to="contact" smooth={true} offset={-260} duration={500}>Contact us</Link></li>
+        <button style={{borderRadius: "30px", border : "none"}} onClick={()=> NavigateToSignup()} className='btn'>Sign up</button>
+      </ul>
+      <img src={menu_icon} alt="menu" className='menu-icon' onClick={toggleMenu} />
+    </nav>
+  )
+}
+
+export default Navbar
+

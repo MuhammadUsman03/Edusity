@@ -1,0 +1,72 @@
+.master-degree-page {
+  background-color: #f4f6f9;
+  padding: 0 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.master-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.master-image {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+.master-image img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.master-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.master-text h1 {
+  font-size: 2.5rem;
+  color: #023e8a;
+  margin-bottom: 20px;
+}
+
+.master-text p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.master-text ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 30px;
+}
+
+.master-text li {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #444;
+}
+
+.apply-button {
+  padding: 12px 24px;
+  background-color: #0077b6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s ease;
+}
+
+.apply-button:hover {
+  background-color: #023e8a;
+}
