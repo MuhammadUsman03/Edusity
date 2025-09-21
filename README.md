@@ -27,7 +27,7 @@ This project uses **[Web3Forms](https://web3forms.com/)** for handling contact f
 It allows sending messages directly to your email without any backend.
 
 ## 🌐 Live Demo
-Check out the live website here: [Edusity on Vercel]([https://your-vercel-link.vercel.app/](https://edusity-iota-five.vercel.app/))
+Check out the live website here: ([(https://edusity-iota-five.vercel.app/)](https://edusity-iota-five.vercel.app/))
 
 ## 📜 License
 This project is open-source and available under the [MIT License](LICENSE).
