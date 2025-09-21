@@ -26,5 +26,8 @@ The website also includes a **Contact Us** page that allows users to send messag
 This project uses **[Web3Forms](https://web3forms.com/)** for handling contact form submissions.  
 It allows sending messages directly to your email without any backend.
 
+## Live Demo
+edusity-iota-five.vercel.app
+
 ## 📜 License
 This project is open-source and available under the [MIT License](LICENSE).
